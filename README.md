@@ -49,7 +49,7 @@ Build application (dev version):
 $ npm run build
 ```
 
-Deploy application
+Deploy application:
 
 ```
 $ npm run deploy

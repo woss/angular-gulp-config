@@ -3,10 +3,11 @@ angular-gulp-config
 
 ## Setup
 
-Install the module:
+Install the module and dependencies:
 
 ```
-$ npm install angular-gulp-config require-dir --save-dev
+$ npm install -g gulp
+$ npm install angular-gulp-config gulp require-dir --save-dev
 ```
 
 Copy the `gulpfile.js`:

@@ -6,7 +6,7 @@ var aws = require('gulp-aws');
 var paths = require('./paths');
 var zipFile = 'client-latest.zip';
 
-gulp.task('zip', ['build:prod'], function() {
+gulp.task('zip', function() {
   return gulp.src(paths.public + '/**/*')
     .pipe(zip(zipFile))
     .pipe(gulp.dest(paths.releases));

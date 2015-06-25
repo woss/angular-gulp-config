@@ -29,15 +29,27 @@ Then add the following scripts to your `package.json` file:
 }
 ```
 
-Create `angular-gulp-config.json`:
+Create an `angular-gulp-config.json` file:
 
 ```
 {
   "app": "YOUR_ANGULAR_APP_NAME",
+  "browserSync": {
+    "port": 8006
+  }
   "tests": [
     "src/**/*-spec.js"
   ]
 }
+```
+
+Configure an S3 bucket in your `.env` file:
+
+```
+S3_ACCESS_KEY=YOUR_S3_ACCESS_KEY
+S3_SECRET=YOUR_S3_SECRET
+S3_REGION=eu-west-1
+S3_BUCKET=BUCKET_NAME/any_subdirectory
 ```
 
 ## Common Usages

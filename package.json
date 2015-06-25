@@ -13,6 +13,8 @@
     "url": "https://github.com/ericnishio/angular-gulp-config"
   },
   "dependencies": {
+    "browser-sync": "^2.7.12",
+    "connect-modrewrite": "^0.8.1",
     "dotenv": "^1.2.0",
     "gulp-aws": "0.0.4",
     "gulp-concat": "^2.2.0",

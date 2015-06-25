@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var ngTemplates = require('gulp-ng-templates');
 var paths = require('./paths');
-var utils = require('../libs/utils');
+var utils = require('../lib/utils');
 var appName = utils.getConfig('app');
 
 gulp.task('templates', function() {

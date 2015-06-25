@@ -3,7 +3,7 @@ require('dotenv').load();
 var gulp = require('gulp');
 var ngConstant = require('gulp-ng-constant');
 var paths = require('./paths');
-var utils = require('../libs/utils');
+var utils = require('../lib/utils');
 
 gulp.task('constant:dev', function() {
   return compileConstants('dev');

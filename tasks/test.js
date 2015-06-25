@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var protractor = require('gulp-protractor');
 var paths = require('./paths');
-var utils = require('../libs/utils');
+var utils = require('../lib/utils');
 
 gulp.task('webdriver:start', ['webdriver:update'], protractor.webdriver);
 gulp.task('webdriver:update', protractor.webdriver_update);

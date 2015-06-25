@@ -8,6 +8,10 @@
   },
   "author": "Eric Nishio <eric@self-learner.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ericnishio/angular-gulp-config"
+  },
   "dependencies": {
     "dotenv": "^1.2.0",
     "gulp-aws": "0.0.4",

@@ -17,7 +17,7 @@ gulp.task('test', ['webdriver:start'], function() {
 
   return gulp.src(files)
     .pipe(protractor.protractor({
-      configFile: utils.getProjectPath() + '/protractor.conf.js'
+      configFile: 'protractor.conf.js'
     }))
     .on('error', function(err) {
       console.log(err);

@@ -3,30 +3,16 @@ angular-gulp-config
 
 ## Setup
 
+Install the module:
+
 ```
 $ npm install angular-gulp-config require-dir --save-dev
+```
+
+Copy the `gulpfile.js`:
+
+```
 $ cp node_modules/angular-gulp-config/gulpfile.js .
-```
-
-Then add the following scripts to your `package.json` file:
-
-```
-{
-  ...
-  "scripts": {
-    ...
-    "start": "gulp",
-    "test": "npm run build && gulp test",
-    "lint": "gulp lint",
-    "build": "npm run build:dev",
-    "build:dev": "npm install && gulp build:dev",
-    "build:prod": "npm install && gulp build:prod",
-    "deploy": "npm install && gulp lint && gulp test && gulp zip && gulp upload",
-    "deploy:skip-tests": "npm install && gulp lint && gulp zip && gulp upload",
-    ...
-  }
-  ...
-}
 ```
 
 Create an `angular-gulp-config.json` file:
@@ -50,6 +36,27 @@ S3_ACCESS_KEY=YOUR_S3_ACCESS_KEY
 S3_SECRET=YOUR_S3_SECRET
 S3_REGION=eu-west-1
 S3_BUCKET=BUCKET_NAME/any_subdirectory
+```
+
+Then add the following scripts to your `package.json` file:
+
+```
+{
+  ...
+  "scripts": {
+    ...
+    "start": "gulp",
+    "test": "npm run build && gulp test",
+    "lint": "gulp lint",
+    "build": "npm run build:dev",
+    "build:dev": "npm install && gulp build:dev",
+    "build:prod": "npm install && gulp build:prod",
+    "deploy": "npm install && gulp lint && gulp test && gulp zip && gulp upload",
+    "deploy:skip-tests": "npm install && gulp lint && gulp zip && gulp upload",
+    ...
+  }
+  ...
+}
 ```
 
 ## Common Usages

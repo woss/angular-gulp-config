@@ -29,6 +29,17 @@ Then add the following scripts to your `package.json` file:
 }
 ```
 
+Create `angular-gulp-config.json`:
+
+```
+{
+  "app": "YOUR_ANGULAR_APP_NAME",
+  "tests": [
+    "src/**/*-spec.js"
+  ]
+}
+```
+
 ## Common Usages
 
 Start development environment:
